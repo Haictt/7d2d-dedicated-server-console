@@ -1,0 +1,31 @@
+{
+  "name": "7d2d-admin-console",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 3505",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p 3505",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "date-fns": "^4.4.0",
+    "fs-extra": "^11.3.5",
+    "lucide-react": "^1.17.0",
+    "next": "16.2.7",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tail": "^2.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.7",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

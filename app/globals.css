@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base:    #0b0b10;
+  --bg-card:    #13131b;
+  --bg-raised:  #1a1a25;
+  --bg-input:   #0e0e16;
+  --bd-base:    #26263a;
+  --bd-soft:    #1e1e2c;
+  --tx-primary: #dedade;
+  --tx-muted:   #6b677a;
+  --tx-dim:     #3d3a4a;
+  --ac-red:     #7a1f2e;
+  --ac-red-h:   #9c2a3c;
+  --ac-glow:    rgba(122, 31, 46, 0.28);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--bg-base);
+  color: var(--tx-primary);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bd-base); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a50; }
+
+/* Ambient glow */
+.admin-bg {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at -5% -5%, rgba(122,31,46,0.28), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 110% 110%, rgba(55,18,80,0.12), transparent 55%),
+    var(--bg-base);
+}
